@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculadora IMC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-list>
+      <!-- Inputs with labels -->
+      <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="Nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Peso (kg) </ion-label>
+        <ion-input type="number" [(ngModel)]="Peso"> </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Altura (cm)</ion-label>
+        <ion-input type="number" [(ngModel)]="Altura"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button color="primary" shape="round" (click)="calcIMC()"> Calcula IMC </ion-button>
+    <ion-button color="danger" shape="round" (click)="gravaIMC()"> Grava IMC </ion-button>
+  </div>
+  <ion-card *ngIf="Resultado">
+    <ion-card-header>
+      Cálculo IMC
+    </ion-card-header>
+    <ion-card-content>
+      <p> {{Nome}} </p>
+      <p> IMC {{Resultado}} </p>
+      <p><strong>{{Mensagem}}</strong></p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

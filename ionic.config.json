@@ -1,0 +1,7 @@
+{
+  "name": "Imc_aula",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

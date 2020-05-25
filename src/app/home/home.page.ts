@@ -42,4 +42,10 @@ export class HomePage {
     this.listImc.push("Nome: "+this.Nome+"IMC: "+this.Resultado);
     localStorage.setItem('imc', JSON.stringify(this.listImc));
   }
+  listaIMC()
+  {   
+  var storage = window.localStorage;
+  localstorage.getItem(this.listImc); 
+  storage.setItem('log', string);
+  }
 }

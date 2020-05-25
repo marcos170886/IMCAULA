@@ -26,8 +26,10 @@
     </ion-list>
     <ion-button color="primary" shape="round" (click)="calcIMC()"> Calcula IMC </ion-button>
     <ion-button color="danger" shape="round" (click)="gravaIMC()"> Grava IMC </ion-button>
+    <ion-button color="secondary" shape="round" (click)="listaIMC()"> Lista IMC </ion-button>
   </div>
   <ion-card *ngIf="Resultado">
+
     <ion-card-header>
       Cálculo IMC
     </ion-card-header>
@@ -35,6 +37,6 @@
       <p> {{Nome}} </p>
       <p> IMC {{Resultado}} </p>
       <p><strong>{{Mensagem}}</strong></p>
-    </ion-card-content>
+      </ion-card-content>
   </ion-card>
 </ion-content>

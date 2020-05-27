@@ -44,8 +44,8 @@ export class HomePage {
   }
   listaIMC()
   {   
-  var storage = window.localStorage;
-  storage.getItem(this.listImc); 
+   this.listImc.get('imc');
+  
   
   }
 }

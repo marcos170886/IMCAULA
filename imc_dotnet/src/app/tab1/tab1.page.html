@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calculadora de IMC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form style="margin: 20px;" (ngSubmit)="calculate()">
+        <ion-item>
+            <ion-input
+                [ngModelOptions]="{standalone: true}"
+                [(ngModel)]="user.name"
+                placeholder="Nome"
+                type="text">
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input
+                [ngModelOptions]="{standalone: true}"
+                [(ngModel)]="user.height"
+                placeholder="Altura em metros"
+                type="number">
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input
+                [ngModelOptions]="{standalone: true}"
+                [(ngModel)]="user.weight"
+                placeholder="Peso em Quilos"
+                type="number">
+            </ion-input>
+        </ion-item>
+
+        <ion-button 
+            expand="block"
+            style="margin-top: 20px;"
+            type="submit"
+        >Calcular</ion-button>
+    </form>
+</ion-content>

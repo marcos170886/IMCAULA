@@ -1,0 +1,7 @@
+{
+  "name": "imc_dotnet",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
